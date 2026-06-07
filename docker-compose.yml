@@ -1,15 +1,43 @@
 services:
-  postgres:
+  was:
+    build: . 
+    container_name: dk_was
+    ports: 
+      - "8080:8080"
+    
+    networks: testNetworkkk
+     
+    #List 방식
+    # db로 작성하기 왜냐면 만약 db_db로 할 경우 container_name을 제거하면 오류가 발생하니
+    environment:
+      - jdbc.driverorg.postgresql.Driver
+      - jdbc.url=jdbc:postgresql://db:5432/todo_db
+      - jdbc.username=todo_user 
+      - jdbc.password=todo_pass
+      
+
+
+  db:
     image: postgres:16-alpine
-    container_name: todo-postgres
-    ports:
-      - "5432:5432"
+    container_name: dk_db
+    volumes: todo_postgres_data:/var/lib/postgresql/data:rw 
+    networks: testNetworkkk
+
+    # Map 방식
     environment:
       POSTGRES_DB: todo_db
       POSTGRES_USER: todo_user
       POSTGRES_PASSWORD: todo_pass
-    volumes:
-      - todo_postgres_data:/var/lib/postgresql/data
 
-volumes:
-  todo_postgres_data:
+
+ 
+        # db init 파일 작성해야 됨
+networks:
+  testNetworkkk:
+    external: true
+
+volumes: 
+todo_postgres_data
+  external: true
+
+
