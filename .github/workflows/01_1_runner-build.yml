@@ -3,13 +3,13 @@ name: 1-(1) Java Github Runner Build
 
 #직접 수동 실행
 on:
-  workflow_dispatch:
+#workflow_dispatch:
 
 #on:
-#  push:
-#    branches: ["main"]
-#  pull_request: 
-#    branches: ["main"]
+  push:
+    branches: ["main"]
+  pull_request: 
+    branches: ["main"]
 
 
 jobs:
