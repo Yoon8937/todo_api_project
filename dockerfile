@@ -1,13 +1,12 @@
-FROM maven:3.9.11-eclipse-temurin-11 AS build
-WORKDIR /app
+#FROM maven:3.9.11-eclipse-temurin-11 AS build
+#WORKDIR /app
 
-#COPY todo_api_project /app/todo_api_project #couldn't find path
-COPY . /app/todo_api_project
+###COPY todo_api_project /app/todo_api_project #couldn't find path
+#COPY . /app/todo_api_project
 
-WORKDIR /app/todo_api_project
+#WORKDIR /app/todo_api_project
 
-RUN mvn clean package
-
+#RUN mvn clean package
 
 
 
