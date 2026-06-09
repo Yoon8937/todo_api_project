@@ -15,8 +15,8 @@ FROM eclipse-temurin:11-jre
 
 WORKDIR /app
 
-COPY --from=build /app/todo_api_project/target/*.jar todo.jar 
-
+#COPY --from=build /app/todo_api_project/target/*.jar todo.jar 
+COPY ./target/*.jar todo.jar
 
 EXPOSE 8080
 CMD ["java", "-jar", "todo.jar"] 
