@@ -1,14 +1,14 @@
-name: 1-(1) Java Github Runner Build
+name: 2 Plugin MultiStage Build
 
 
 #직접 수동 실행
 on:
-  workflow_dispatch:
+        #  workflow_dispatch:
 
-#  push:
-#    branches: ["main"]
-#  pull_request: 
-#    branches: ["main"]
+  push:
+    branches: ["main"]
+  pull_request: 
+    branches: ["main"]
 
 
 jobs:
@@ -20,40 +20,22 @@ jobs:
     - name: Checkout repository code
       uses: actions/checkout@v4
 
-
-    - name: checkkk by cherry
-      run: |
-        pwd
-        ls -al
-        mvn -version 
-
     
 
-    - name: Set up JDK 11 
-      uses: actions/setup-java@v5
-      with:
-        java-version: '11' 
-        distribution: 'temurin'
-        #cache: 'maven' # Maven 의존성 캐싱으로 빌드 속도 향상?
+#   - name: dockerfile bilud
+#     run: docker build --tag todoproject:latest .
 
 
-    # 3. Maven 빌드 및 jar 파일 생성
-    - name: Build with Maven 
-      run: mvn clean package 
+    - name: Set Upp docker Buildx
+      uses: docker/setup-buildx-action@v3 
 
-
-    - name: dockerfile bilud
-      run: docker build --tag todoproject:latest . 
-
-
-
-
-
-
-
-
-
-
+    
+    - name: Build docker image
+      uses: docker/build-push-action@v5
+      with: 
+        context: .
+        push: false 
+        tags: todoproject:latest 
 
 
 
