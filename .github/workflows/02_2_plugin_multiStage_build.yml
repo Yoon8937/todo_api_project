@@ -3,12 +3,12 @@ name: 2 Plugin MultiStage Build
 
 #직접 수동 실행
 on:
-        #  workflow_dispatch:
+  workflow_dispatch:
 
-  push:
-    branches: ["main"]
-  pull_request: 
-    branches: ["main"]
+          #  push:
+          #    branches: ["main"]
+          #  pull_request: 
+          #    branches: ["main"]
 
 
 jobs:
