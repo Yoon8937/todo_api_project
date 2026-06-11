@@ -32,6 +32,7 @@ jobs:
       with:
         path: ~/.m2/repository
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+#        뭔가 restore도 있어야 될 것 같은 느낌적인 느낌
 
         
     - name: Restore Docker cache mounts
@@ -39,6 +40,11 @@ jobs:
       with:
         cache-source: ~/.m2/repository
 
+#    - name: Build with Maven
+#      run: mvn clean package
+
+    - name: Build with Maven
+      run: mvn -B dependency:go-offline
 
 
 

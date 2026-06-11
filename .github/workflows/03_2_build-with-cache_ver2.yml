@@ -28,7 +28,6 @@ jobs:
         # cache: 'maven' # 중복으로 주석 처리 .m2 dependencies
 
 
-    
       #actions/cache@v4단계에서 hashFiles함수를 수행하여 기존 해쉬값과 같은지 다른지 판단함. 완전 일치할 때 (pom.xml 변경 없음): 예전 캐시를 그대로 가져와서 폴더(~/.m2/repository)에 다 넣어둠. 
       #일부 변경될 때 (pom.xml 수정됨): restore-keys를 통해 일치하면 예전 캐시라도 가져와서 일단 폴더에 다 채워둠. 
 
@@ -49,10 +48,24 @@ jobs:
           ${{ runner.os }}-m2-
 
 
-
     - name: Build with Maven
       run: mvn clean package
 
+### 추가 부연 설명(실행 순서 및 동작 방식)
+#    첫 번째로 ci 빌드를 수행할 때, pom.xml파일에 대해 hashsFiles함수를 수행하여 해시값을 생성함.
+#    path에 설정한 경로인 ~/.m2/repository에는 아무것도 없음.
+#    그리고 다음 단계인 mvn clean package를 수행하여 깃헙러너 서버의 ~/.m2/repository(디폴트 경로)경로에
+#    인터넷 다운받은 의존성 패키지를 다운받음.
+#    이후에 모든 단계가 성공적으로 끝나고 jobs가 종료되기 직전에  dependencies build cache단계에서 설정한
+#    ~/.m2/repository 경로에 있는 것들을 압축하여 깃헙캐시저장소에 업로드함.
+#
+#    두 번째 ci 빌드를 실행하게 되면 dependencies build cache단계에서
+#    1. pom.xml파일이 수정이 있으면 ${{ runner.os }}-m2-으로 시작하는 해시값을 통해 찾고 그에 맞는
+#    캐시를 가져와서 path: ~/.m2/repository 경로에 의존성을 위치시킴.
+#    2. pom.xml파일이 수정 없으면 기존과 동일한 해시값을 찾고 그에 맞는 캐시를 가져와 ~/.m2/repository 경로에 의존성을 위치시킴.
+#
+#    이후 mvn clean package를 수행할 때는 이미 깃헙러너서버에  ~/.m2/repository경로에 의존성 패키지가
+#    캐싱되었으니 의존성 부분은 빠르게 넘어감.
 
 
 
