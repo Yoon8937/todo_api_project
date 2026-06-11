@@ -1,13 +1,13 @@
-name: 3-(1) Maven Build and Docker Build Without Cache
+name: 3-(2) Maven Build and Docker Build With Cache - Version1
 
 
 on:
-  workflow_dispatch:
+  #  workflow_dispatch:
 
-          #  push:
-          #    branches: ["main"]
-          #  pull_request:
-          #    branches: ["main"]
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-        #cache: 'maven' # Maven 의존성 캐싱
+        cache: 'maven' # Maven 의존성 캐싱
 
 
     # 3. Maven 빌드 및 jar 파일 생성
@@ -40,12 +40,15 @@ jobs:
       uses: docker/setup-buildx-action@v3
 
 
-   # 5. Dockerfile Buildd 
+   # 5. Dockerfile Buildd
     - name: Build Dcoker image
       uses: docker/build-push-action@v5
       with:
         context: .
-        file: ./dockerfile.dev 
+        file: ./dockerfile.dev
         push: false
         tags: todoproject:latest
-     
+        cache-from: type=gha
+        cache-to: type=gha, mode=max
+
+
