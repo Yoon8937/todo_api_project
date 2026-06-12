@@ -2,12 +2,12 @@ name: 3-(2) Maven Build and Docker Build With Cache - Version1
 
 
 on:
-  #  workflow_dispatch:
+  workflow_dispatch:
 
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+          #  push:
+          #    branches: ["main"]
+          #  pull_request:
+          #    branches: ["main"]
 
 
 jobs:
