@@ -1,0 +1,72 @@
+name: 3-(2) Maven Build and Docker Build With Cache - Version1
+
+
+on:
+  #  workflow_dispatch:
+
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+
+    steps:
+    - name: Checkout repository code
+      uses: actions/checkout@v4
+
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v5
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        # cache: 'maven' # 중복으로 주석 처리 .m2 dependencies
+
+
+    
+      #actions/cache@v4단계에서 hashFiles함수를 수행하여 기존 해쉬값과 같은지 다른지 판단함. 완전 일치할 때 (pom.xml 변경 없음): 예전 캐시를 그대로 가져와서 폴더(~/.m2/repository)에 다 넣어둠. 
+      #일부 변경될 때 (pom.xml 수정됨): restore-keys를 통해 일치하면 예전 캐시라도 가져와서 일단 폴더에 다 채워둠. 
+
+        #mvn clean package 단계
+        #이미 폴더(~/.m2/repository) 안에 패키지들로 채워줬기 때문에 메이븐이 인터넷에서 다운로드 하는 속도를 획기적으로 줄일 수 있음. 
+        #pom.xml파일이 수정이 있으면 인터넷에서 신규 의존성만 인터넷에서 다운받아 .m2폴더에 넣음. 
+
+        #빌드 후 Post 단계
+        #모든 빌드가 완료되면 현재 .m2폴더를 통째로 압축하여 깃헙 서버에 새로운 캐시로 저장함.  
+    - name: dependencies build cache  
+      uses: actions/cache@v4
+      with: 
+        path: ~/.m2/repository 
+        #follow current os, it creates like Linx-m2-abc123a
+        # hashFiles : 지정한 파일들의 내용을 기반으로 해시값(SHA256 비슷한 문자열)을 생성하는 함수
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }} 
+        restore-keys: |
+          ${{ runner.os }}-m2-
+
+
+
+    - name: Build with Maven
+      run: mvn clean package
+
+
+
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+
+    - name: Build Dcoker image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        file: ./dockerfile
+        push: false
+        tags: todoproject:latest
+        cache-from: type=gha
+        cache-to: type=gha, mode=max
+
