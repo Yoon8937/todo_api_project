@@ -7,6 +7,7 @@ COPY pom.xml .
 
 RUN --mount=type=cache,target=/root/.m2 \
     mvn -B dependency:go-offline 
+#RUN mvn -B dependency:go-offline
 
 #COPY . /app/todo_api_project
 #COPY src /app/todo_api_project
