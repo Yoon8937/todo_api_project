@@ -1,0 +1,216 @@
+Wed Jun 17 18:45:44 KST 2026
+
+ID                           RECLAIMABLE   SIZE       LAST ACCESSED
+0pponaokv87thw1jpuwzujiev    true          0B         3 weeks ago
+0xnf7wb1pzgltg7mpmkcjsjfg    true          0B         3 weeks ago
+121mvuy9ahy3s9ra74nm7ipbg    true          0B         3 weeks ago
+1s1v6trjlc7ym0nwgt4o4tdw0    true          0B         4 weeks ago
+1z6oozyxpm0anm5umf0574e80    true          0B*        2 weeks ago
+2v9umrbfk83plim201814yvr3    true          0B         3 weeks ago
+3igus2riypexa0gle3qudzo96    true          0B         9 days ago
+47e3i223udmi2d3hppf4mw63c    true          0B*        2 weeks ago
+4sui0441sq81r6s8vsu1afmif    true          0B*        2 weeks ago
+4vwpgpneqhrz4lypk560hz5rs    true          0B         3 weeks ago
+5abwsid140p4np603hkjlsfu9    true          0B         3 weeks ago
+5rewcduszjc5r1h4vs9fkankh    true          0B         9 days ago
+610gdgt0mjyu9ehc9ch7jhvaw    true          0B*        2 weeks ago
+6liaucjudgtkvhkvm7875g1hv    true          0B*        2 weeks ago
+992kh3k8fn0rts4gxlsfrgcig    true          0B         9 days ago
+aole1lhho2pv63pm8pgvp18vv    true          0B         8 days ago
+bpvj7wf8pfiqb3egbfocl2vqr    true          0B*        3 weeks ago
+ccs7g7m51c6jx6qbztnt2w10i    true          0B         3 weeks ago
+cpntxie247l5keu929ijc6m7y    true          0B*        3 weeks ago
+cz8v9wxwoq3u3iv2s2q5v887j*   true          0B         8 days ago
+d0apum3l1tbjb6kqivkq6nkey    true          0B         3 weeks ago
+eu5gqo6l3b78681vpofnjjh18    true          0B*        3 weeks ago
+f19rxwn1n0qjbsw3jyxx395kd    true          0B         3 weeks ago
+f6p2ltzsaoif2e48tej729dg2    true          0B         3 weeks ago
+ftne95ts8wo97pifj5y58p4g7    true          0B         8 days ago
+gcfdvmiqjqtxl5a8hr14313y2    true          0B*        2 weeks ago
+gry9fof1zluqn6w02s6x09e52    true          0B         9 days ago
+gv2rvapp4u97w9sra9u1ahda6    true          0B         3 weeks ago
+h2jwv1yc88jrcs549ei9tyb5m    true          0B*        2 weeks ago
+ibwvs35uvvxqa6je5s6sebs63    true          0B         9 days ago
+id273p0fao0rgjlgs9euqhkpn    true          0B*        2 weeks ago
+ijm710t74lmv2etoqq2h72di3    true          0B         3 weeks ago
+j20hjn6wd6ffr2u8xf5t0cd7c    true          0B         3 weeks ago
+jddyi6fmlbcgm0y55ezk6eyvy    true          0B         8 days ago
+jfkxos3ahme0emgxbt5pmyoh2    true          0B         4 weeks ago
+jmkjvdeuqfyuoxev39k4gh27e    true          0B*        4 weeks ago
+jr0mulsm5ayhmjrhnumdp3ksc    true          0B         3 weeks ago
+jveuezo6i1spj3l5cierp02zq    true          0B*        3 weeks ago
+jwqr9mb925kls8ejozvq3z4vt*   true          0B         3 weeks ago
+k2ecx8tyu9gdccq7geyk2k10p    true          0B         3 weeks ago
+k321dannp5depxqbryus391pr    true          0B         3 weeks ago
+k59wlm0vm51wvpxszxdi1trt6    true          0B         3 weeks ago
+k73cmkd01xgzt60jytoqwdmpf    true          0B*        2 weeks ago
+k9cod0c0lccellm9eannus7z6    true          0B*        4 weeks ago
+kqo9upkmgas400syd0kcm6hy2    true          0B         3 weeks ago
+kv0dyd5v8626c5jh0qj8un45q    true          0B         9 days ago
+l2sfwowwhpyc0y5qhoh9gm72l    true          0B*        2 weeks ago
+liyogrdgdqy5e08yzgf81b2rq    true          0B         3 weeks ago
+lz2kes6f31u0v5y78trb5wxxj    true          0B         8 days ago
+m0k6dwby4wmp70ht6zo7j7i3j    true          0B*        9 days ago
+miwt4ybm7zc4zd4lhyn6nec2c*   true          0B         2 weeks ago
+msmtc68o9uufow3pndkua3klr    true          0B         3 weeks ago
+n2i2llkwsq3tbzod0w67iuxnh    true          0B         3 weeks ago
+n8on0tjsjpj7dnoi3p0fb46zl    true          0B         9 days ago
+nf3rrsdif2cne8yibbaomma92    true          0B         3 weeks ago
+nrclpad49cr72fb28qwjl2y8z    true          0B*        9 days ago
+odwwkrmvsxaau2sbaelzfqs6l    true          0B         3 weeks ago
+oleu3ygtj8vxxuq2l5k85zxky    true          0B*        3 weeks ago
+paa7fx7jojgjw73griky2rcvi    true          0B         3 weeks ago
+pd1vf3vvkaxbzhtm6ibvsaxey    true          0B*        9 days ago
+ptwkk9n5rdoetl0rf74i3khda    true          0B         3 weeks ago
+pwqnm9mddcep0gzr4fys9ggvx    true          0B*        3 weeks ago
+qbbuzeat98sax2ylm74qjvutb*   true          0B         4 weeks ago
+r2emqjus8vrbwhjsd5oe8nqgm    true          0B         9 days ago
+r7eohv1wkw1pwng4jbrh3u0nd    true          0B*        3 weeks ago
+r9ixvy31apntsel65yk6au5xd    true          0B         3 weeks ago
+ri7axoyp8jrl4sybs0mrwh2pf    true          0B         3 weeks ago
+rm49ba6ekfdfq5v3yc1z1buzs    true          0B*        9 days ago
+rouphiljpu6tz26uk6ndp78yg    true          0B*        2 weeks ago
+sqsowkwbtn5tund6qxblbrfby    true          0B         3 weeks ago
+t43x9a9gatg1yc6vvgnsznhzs    true          0B         3 weeks ago
+t4jm6p3uwwi3elepi3j9uokmq    true          0B         3 weeks ago
+thxjojs4lg0hqyjjlhon6lfnf    true          0B*        2 weeks ago
+tqydk9hcpbfdhz09hycv1uasn    true          0B*        9 days ago
+trxshvc84brl05ib7b4xe14oj    true          0B         3 weeks ago
+tvm6k8n5g1pk9osk08ohpz6h5    true          0B*        3 weeks ago
+tz1dkrdc5xzjf8vkuf1zz0u13    true          0B*        3 weeks ago
+u2f83y2e9gg0fh37vts79gr7f    true          0B         9 days ago
+u4ub8y2fgfimqe0d9pik08758    true          0B         3 weeks ago
+v6ojw1n1kpwjdp1tkpn84zrgz    true          0B         4 weeks ago
+v8ym07aj3jfty624vytij7d8h*   true          0B         8 days ago
+vn0fi114gbzozvtoisg7vb5zc    true          0B         2 weeks ago
+w1naljmf3e22nvan800xzni64    true          0B*        3 weeks ago
+w3ly1d9hk68h3ug2z9k7p6it7    true          0B         2 weeks ago
+w5mj3j95xsd585ps2hpyznuy8    true          0B         4 weeks ago
+w77dc3wsxcimzfxoxws2901bg    true          0B         9 days ago
+w8fany3hdac65m843mcj4ggpr    true          0B*        9 days ago
+waexiwb9r0fkaiszcft3jfd7k    true          0B         3 weeks ago
+wf8ljkdr6xm830qln5cvsg8xk    true          0B         3 weeks ago
+wkq0uuc5em8fty543tceyixup    true          0B*        3 weeks ago
+xipm8mmofh61jo9g3oebtxtjs    true          0B         3 weeks ago
+xtelh0uvlt4crzvfhl54ypln2    true          0B*        8 days ago
+y0erozswd1335aspdivvir803    true          0B         8 days ago
+ymmrunob5o90lgs0tlpt5dd2o    true          0B         9 days ago
+z2k7ox0se8ebfhn50w7tt4fp0    true          0B         8 days ago
+z52zwqrb4w2go5p1t0fi98z2g    true          0B         3 weeks ago
+ze20llr6ok8najbia2crqdlai    true          0B         3 weeks ago
+zfuyp0vwlpv8vdnzyvtq90a84    true          0B         3 weeks ago
+zi2zgk908vd7brzhm5aaw8ur8    true          0B         3 weeks ago
+zj0n0xy8jr7efwhls8rlpin4a    true          0B         3 weeks ago
+zpquwi11ialklf83peiki34bh    true          0B*        2 weeks ago
+zvyq5dlp4bpsikxur2x1jr94u    true          0B         3 weeks ago
+youo5h2minlvgz8l4gdpa7rov*   true          316B       8 days ago
+od0lgxbevv3lrmwxmrl0g1kl2*   true          767B       4 weeks ago
+amokzegy68yagwfek0khb08li*   true          959B       2 weeks ago
+0qs3opbrmqqrle1lmiof19l0z    true          4.822kB    2 weeks ago
+f5g5azw9mn6rpjo3fx6mfoj6w    true          5.477kB    3 weeks ago
+oo67kpf50yhxbmswohlbcoydd    true          5.477kB    3 weeks ago
+s3gorpwo79p9ysierr8qcv558    true          58.07kB    9 days ago
+x15kgcz97hyzz15fdkv58kerd    true          58.64kB    8 days ago
+3v28mu4to06lg62zwh6u9to6k    true          84.61kB    8 days ago
+qy75m5bdolph7x64ni8qkhp6l    true          84.61kB    8 days ago
+rsu6a0ovf57rapt15dysxhep5    true          87.29kB    8 days ago
+0f9bogdxvk2bwxyc0j199fj97    true          296.2kB*   2 weeks ago
+l7nen4dfman9lu94eaaukxfnh    true          297.9kB    3 weeks ago
+mj74kfhncf6mbrddmwzrnn65k    true          297.9kB    4 weeks ago
+rh8v7jibdcz5u6aitnsg85wuz    true          298kB      4 weeks ago
+1lbcyl0ay89zs876e0n02yn3j*   true          333.5kB    3 weeks ago
+3emlhwxi32zplrg0djmyldleg*   true          333.5kB    3 weeks ago
+71f6szerp8l37x8pdxd1ecblp*   true          333.5kB    3 weeks ago
+f249ugr731920lpiy39a9e5l0*   true          333.5kB    3 weeks ago
+jv51pw1rfo3bu5j1395nbuj7m*   true          333.5kB    3 weeks ago
+ppyodgzwq55vvblpoxwan42dz*   true          333.5kB    3 weeks ago
+w5u16jtgwltckaqa3o1d3wf19*   true          333.5kB    3 weeks ago
+x6q9w8ya0zbrokq0yslk29dbo*   true          333.5kB    3 weeks ago
+y5xbq8f8t1ali38lypax3vh2x*   true          333.5kB    3 weeks ago
+z3xh282y3the2i2omz5sh287n*   true          333.5kB    3 weeks ago
+7cxepcoyy3e0v1t9deid5xpe5    true          10.56MB    4 weeks ago
+f2v7qwjrzhgk0z0bbt02dbxji    true          14.75MB    4 weeks ago
+r3yuv3bn16g6jexmsq1w8teul    true          14.75MB    3 weeks ago
+wrbwi0u43lu7rf9uokdqj4s4r    true          14.75MB    4 weeks ago
+vm10h4w932ubiz8vbxrzhc15y    true          27.38MB*   2 weeks ago
+iannu87vekvss6h4kbck411vl    true          41.17MB    9 days ago
+jfrh017rjay4r4ksv397a362v    true          41.17MB*   8 days ago
+ixm9icbo03fh8x4wultx897zj    true          41.17MB*   8 days ago
+lqppu6buowte98cui5ptfxfe0    true          41.17MB*   8 days ago
+6i2c6t7q9xaz8cah4l5ua5128    true          41.17MB*   8 days ago
+pjaxs3vgq535zaeqqwainuerm*   true          120.1MB    9 days ago
+w7mexsbmdpf0x0al9nzhcsmp9*   true          120.1MB    8 days ago
+ktykphppo69nct217wz5xwmpk*   true          120.1MB    8 days ago
+ve0cc15c9aw0gibwbutzpdo07*   true          120.1MB    8 days ago
+wjd8uc4uo61i9x6epy1crvo4l*   true          120.1MB    8 days ago
+uijvbk0rh87ewg4g4yxn60q5g*   true          123.6MB    3 weeks ago
+8yz5chv3laun22ecspeq2xaaa    true          401.3MB    2 weeks ago
+rh2dzn5up8w31xalwt5ktanq5    true          401.3MB*   2 weeks ago
+tk5ab6n18nm9aoya6qh3e5l74    true          401.3MB*   2 weeks ago
+uiob1p6zsg3p69wq3ei6raunt*   true          401.3MB    2 weeks ago
+ezfr63pcmxrep4qp21bmekz1y    true          401.3MB    4 weeks ago
+t89x7tw9zr27w91gjei856k05    true          401.3MB    4 weeks ago
+x77aif1eg9l5lzebbd8lb6l46*   true          401.3MB    4 weeks ago
+gtltt4ouwflihg7xlm7n3wt47    true          464.2MB    3 weeks ago
+i7ago7ze3vxaou7ilinqnqcpy    true          464.2MB    3 weeks ago
+ptyz917vcibsmwkn9pck4inxh    true          464.2MB    3 weeks ago
+svq0hlne4290eo415jumpu73o    true          464.2MB    3 weeks ago
+7t3w1hj478a5tltc5n4lxb4n8    true          594.6MB*   2 weeks ago
+3kg8kf8e4btzi73grkow0xve0    true          770.5MB    4 weeks ago
+jn2117vvbv8y54f878c1tandj    true          847.4MB    4 weeks ago
+2f7g2xrstc325zlctktroo9d5    true          980.1MB    3 weeks ago
+48fq29tw1a92tq4zsnl07h56n    true          980.1MB    3 weeks ago
+gur6fpyjoikdu8pce5xhf2sck    true          980.1MB    3 weeks ago
+npon5m8x31t8wqym9ry7u7hcd    true          980.1MB    3 weeks ago
+ooev9w55epluzh8jdeaunt0vd    true          980.1MB    3 weeks ago
+q5l0qm8aziuefto3jy1pkmf4n    true          980.1MB    3 weeks ago
+dxbdn81aq2wg21bszyhuunhcj    true          980.1MB    3 weeks ago
+rvea69dp4kyq1qc6pk55g4yk3    true          980.1MB    3 weeks ago
+k985v1v536d6hunie2x5u71ho    true          1.099GB    3 weeks ago
+ttav91rvsbfxkje384091i6wq    true          1.099GB    3 weeks ago
+Shared:		1.59GB
+Private:	16.35GB
+Reclaimable:	17.93GB
+Total:		17.93GB
+
+
+Filesystem           Size  Used Avail Use% Mounted on
+devtmpfs             3.8G     0  3.8G   0% /dev
+tmpfs                3.8G     0  3.8G   0% /dev/shm
+tmpfs                3.8G  9.5M  3.8G   1% /run
+tmpfs                3.8G     0  3.8G   0% /sys/fs/cgroup
+/dev/mapper/cl-root   36G   28G  7.7G  79% /
+/dev/sda1           1014M  346M  669M  35% /boot
+/dev/mapper/cl-home   18G  3.1G   15G  18% /home
+tmpfs                775M   12K  775M   1% /run/user/42
+tmpfs                775M  4.0K  775M   1% /run/user/1000
+
+
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          14        3         4.592GB   2.989GB (65%)
+Containers      3         0         68.4MB    68.4MB (100%)
+Local Volumes   5         2         183.2MB   48.55MB (26%)
+Build Cache     167       0         17.93GB   16.35GB
+
+
+
+================================after docker builder prune -a -f ================================
+
+Filesystem           Size  Used Avail Use% Mounted on
+devtmpfs             3.8G     0  3.8G   0% /dev
+tmpfs                3.8G     0  3.8G   0% /dev/shm
+tmpfs                3.8G  9.5M  3.8G   1% /run
+tmpfs                3.8G     0  3.8G   0% /sys/fs/cgroup
+/dev/mapper/cl-root   36G   11G   26G  29% /
+/dev/sda1           1014M  346M  669M  35% /boot
+/dev/mapper/cl-home   18G  3.1G   15G  18% /home
+tmpfs                775M   12K  775M   1% /run/user/42
+tmpfs                775M  4.0K  775M   1% /run/user/1000
+
+
+
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          14        3         4.592GB   2.989GB (65%)
+Containers      3         0         68.4MB    68.4MB (100%)
+Local Volumes   5         2         183.2MB   48.55MB (26%)
+Build Cache     0         0         0B        0B
