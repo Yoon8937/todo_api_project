@@ -3,8 +3,9 @@ WORKDIR /app/todo_api_project
 
 COPY pom.xml .
 
-RUN --mount=type=cache,target=/root/.m2 \
-    mvn -B dependency:go-offline 
+# 이 경로와 yml파일에서 경로도 맞춰줘야 되는 것 같음. 그래서 캐시를 활용할 수 있음.
+RUN --mount=type=cache,target=/root/.m2/repository \
+    mvn -B dependency:go-offline
 #RUN mvn -B dependency:go-offline
 
 #RUN ls /root/.m2 # No such file or directory
@@ -15,7 +16,7 @@ RUN --mount=type=cache,target=/root/.m2 \
 
 COPY src ./src
 
-RUN --mount=type=cache,target=/root/.m2 \
+RUN --mount=type=cache,target=/root/.m2/repository \
     mvn package
 
 

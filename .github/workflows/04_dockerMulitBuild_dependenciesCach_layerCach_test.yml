@@ -1,13 +1,12 @@
-name: 3-(2) Maven Build and Docker Build With Cache - Version1
+name: 04 Docker Multi Build and use buildkit-cache-dance
 
 
 on:
-  workflow_dispatch:
-
-        #  push:
-        #    branches: ["main"]
-        #  pull_request:
-        #    branches: ["main"]
+#  workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 
 jobs:
@@ -24,29 +23,25 @@ jobs:
       uses: docker/setup-buildx-action@v3
 
 
-
-
-    - name: Cache
-      uses: actions/cache@v4
-      id: cache
-      with:
-        path: ~/.m2/repository
-        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-#        뭔가 restore도 있어야 될 것 같은 느낌적인 느낌
+#    - name: dependencies build cache
+#      uses: actions/cache@v4
+#      id: cache
+#      with:
+#        path: ~/.m2/repository
+#        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+##       restore-keys가 없어도 됨. 다만 없으면 정확히 일치할 때문 캐시를 복원함
+#        restore-keys: ${{ runner.os }}-m2-
 
         
-    - name: Restore Docker cache mounts
-      uses: reproducible-containers/buildkit-cache-dance@v3
-      with:
-        cache-source: ~/.m2/repository
+#    - name: Restore Docker cache mounts
+#      uses: reproducible-containers/buildkit-cache-dance@v3
+#      with:
+#        cache-source: ~/.m2/repository
 
+
+#   이게 굳이 필요 없는 듯. 처음에 필요한 줄 알았으나
 #    - name: Build with Maven
-#      run: mvn clean package
-
-    - name: Build with Maven
-      run: mvn -B dependency:go-offline
-
-
+#      run: mvn -B dependency:go-offline
 
 
     - name: Build Dcoker image
@@ -58,5 +53,11 @@ jobs:
         tags: todoproject:latest
         cache-from: type=gha
         cache-to: type=gha, mode=max
+
+
+#    - name: checke dependencies
+#      run: cd ~/.m2/repository |
+#           ls -al
+
 
 
