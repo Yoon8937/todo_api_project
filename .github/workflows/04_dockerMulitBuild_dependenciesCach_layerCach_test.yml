@@ -43,16 +43,21 @@ jobs:
 
 
     - name: Restore Docker cache mounts
-      uses: reproducible-containers/buildkit-cache-dance@v3
+      #      uses: reproducible-containers/buildkit-cache-dance@v3
+      uses: reproducible-containers/buildkit-cache-dance@v2
       with:
-        builder: ${{ steps.setup-buildxxx.outputs.name }}
+        cache-source: m2-repository
+        cache-target: /root/.m2/repository
+              #        builder: ${{ steps.setup-buildxxx.outputs.name }}
+
         #cache-dir: m2-repository
-        cache-map: |
-                {
-                        "m2-repository" : "/root/.m2/repository"
-                }
-        dockerfile: ./dockerfile
-        skip-extraction: ${{ steps.cache.outputs.cache-hit }}
+        #        cache-map: |
+        #                {
+        #                        "m2-repository" : "/root/.m2/repository"
+        #                }
+        #        dockerfile: ./dockerfile
+        #        skip-extraction: ${{ steps.cache.outputs.cache-hit }}
+
 
 
          #     - name: Restore Docker cache mounts
@@ -88,7 +93,7 @@ jobs:
     - name: checke dependencies
       run: |
            ls -al
-           #           ls -al m2-repository
+           ls -al m2-repository
            
       #      run: cd ~/.m2/repository |
       #           ls -al
