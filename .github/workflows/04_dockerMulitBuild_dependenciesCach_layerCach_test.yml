@@ -30,53 +30,26 @@ jobs:
       with:
         path: m2-repository
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-#       restore-keys가 없어도 됨. 다만 없으면 정확히 일치할 때문 캐시를 복원함
         restore-keys: ${{ runner.os }}-m2-
 
  
 
-#     this is version2 style i guess 
-#    - name: Restore Docker cache mounts
-#      uses: reproducible-containers/buildkit-cache-dance@v2
-#      with:
-#        cache-source: ~/.m2/repository
-
 
     - name: Restore Docker cache mounts
       #      uses: reproducible-containers/buildkit-cache-dance@v3
-      uses: reproducible-containers/buildkit-cache-dance@v2
+      uses: reproducible-containers/buildkit-cache-dance@v3
       with:
-        cache-source: m2-repository
-        cache-target: /root/.m2/repository
-              #        builder: ${{ steps.setup-buildxxx.outputs.name }}
-
-        #cache-dir: m2-repository
+              # cache-source: m2-repository
+        #        cache-target: /root/.m2/repository
+        builder: ${{ steps.setup-buildxxx.outputs.name }}
+        cache-dir: m2-repository
         #        cache-map: |
         #                {
         #                        "m2-repository" : "/root/.m2/repository"
         #                }
-        #        dockerfile: ./dockerfile
-        #        skip-extraction: ${{ steps.cache.outputs.cache-hit }}
+        dockerfile: ./dockerfile
+        skip-extraction: ${{ steps.cache.outputs.cache-hit }}
 
-
-
-         #     - name: Restore Docker cache mounts
-         #       uses: reproducible-containers/buildkit-cache-dance@v3
-         #       with:
-         #         builder: ${{ steps.setup-buildx.outputs.name }}
-         #         cache-dir: cache-mount
-         #         cache-map: |
-         #           {
-         #                   ".": "/root/.m2/repository"
-         #           }
-         #         skip-extraction: ${{ steps.cache.outputs.cache-hit }}
-
-
-
-
-#   이게 굳이 필요 없는 듯. 처음에 필요한 줄 알았으나
-#    - name: Build with Maven
-#      run: mvn -B dependency:go-offline
 
 
     - name: Build Dcoker image
@@ -94,8 +67,6 @@ jobs:
       run: |
            ls -al
            ls -al m2-repository
+           cd m2-repository/root/repository
+
            
-      #      run: cd ~/.m2/repository |
-      #           ls -al
-
-
