@@ -81,8 +81,8 @@ jobs:
         cache-to: type=gha, mode=max
 
 
-#    - name: checke dependencies
-#      run: cd ~/.m2/repository |
-#           ls -al
+    - name: checke dependencies
+      run: cd ~/.m2/repository |
+           ls -al
 
 
