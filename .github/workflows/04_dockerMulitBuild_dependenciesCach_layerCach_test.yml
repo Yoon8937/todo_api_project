@@ -85,6 +85,8 @@ jobs:
       run: |
            cd m2-repository 
            ls -al
+           cd root/repository 
+           ls -al
       #      run: cd ~/.m2/repository |
       #           ls -al
 
