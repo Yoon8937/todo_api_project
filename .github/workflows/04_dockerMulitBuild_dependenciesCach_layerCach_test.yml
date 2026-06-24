@@ -82,7 +82,8 @@ jobs:
 
 
     - name: checke dependencies
-      run: cd m2-repository |
+      run: |
+           cd m2-repository 
            ls -al
       #      run: cd ~/.m2/repository |
       #           ls -al
