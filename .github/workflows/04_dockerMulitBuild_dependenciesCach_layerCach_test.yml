@@ -28,7 +28,7 @@ jobs:
       uses: actions/cache@v4
       id: cache
       with:
-        path: m2-repository
+        path: .m2-repository
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
 #       restore-keys가 없어도 됨. 다만 없으면 정확히 일치할 때문 캐시를 복원함
         restore-keys: ${{ runner.os }}-m2-
@@ -46,7 +46,7 @@ jobs:
       uses: reproducible-containers/buildkit-cache-dance@v3
       with:
         builder: ${{ steps.setup-buildxxx.outputs.name }}
-        cache-dir: m2-repository
+        cache-dir: .m2-repository
         dockerfile: ./dockerfile
         skip-extraction: ${{ steps.cache.outputs.cache-hit }}
 
@@ -82,7 +82,11 @@ jobs:
 
 
     - name: checke dependencies
-      run: cd ~/.m2/repository |
+      run: ls -al | 
+           cd m2-repository |
            ls -al
+      #      run: cd ~/.m2/repository |
+      #           ls -al
 
 
+:wq
