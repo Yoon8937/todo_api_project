@@ -46,7 +46,11 @@ jobs:
       uses: reproducible-containers/buildkit-cache-dance@v3
       with:
         builder: ${{ steps.setup-buildxxx.outputs.name }}
-        cache-dir: m2-repository
+        #cache-dir: m2-repository
+        cache-map: |
+                {
+                        "m2-repository": "/root/.m2/repository"
+                }
         dockerfile: ./dockerfile
         skip-extraction: ${{ steps.cache.outputs.cache-hit }}
 
@@ -83,8 +87,8 @@ jobs:
 
     - name: checke dependencies
       run: |
-           cd m2-repository/root/.m2
-           ls -al
+           ls -al m2-repository
+           
       #      run: cd ~/.m2/repository |
       #           ls -al
 
