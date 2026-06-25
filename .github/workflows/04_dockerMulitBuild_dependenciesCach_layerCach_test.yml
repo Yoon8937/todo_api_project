@@ -3,10 +3,10 @@ name: 04 Docker Multi Build and use buildkit-cache-dance
 
 on:
 #  workflow_dispatch:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+#  push:
+#    branches: ["main"]
+#  pull_request:
+#    branches: ["main"]
 
 
 jobs:
