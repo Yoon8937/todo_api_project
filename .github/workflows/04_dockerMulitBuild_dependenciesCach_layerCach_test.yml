@@ -28,16 +28,19 @@ jobs:
       uses: actions/cache@v4
       id: cache
       with:
-        path: m2-repository
+        path: /tmp/m2-repository
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2-
 
- 
+
+    - name: check dependencies
+      run: |
+        /tmp/m2-repository
 
 
 #    - name: Restore Docker cache mounts
 #      uses: reproducible-containers/buildkit-cache-dance@v3
-#      with:
+#      with:ㄴ
 #        cache-source: m2-repository
 #        cache-target: /root/.m2/repository
 #        builder: ${{ steps.setup-buildxxx.outputs.name }}
@@ -53,7 +56,7 @@ jobs:
     - name: Restore Docker cache mounts
       uses: reproducible-containers/buildkit-cache-dance@v2.1.2
       with:
-        cache-source: m2-repository
+        cache-source: /tmp/m2-repository
         cache-target: /root/.m2/repository
 
 
@@ -68,10 +71,10 @@ jobs:
         cache-to: type=gha, mode=max
 
 
-    - name: checke dependencies
-      run: |
-        ls -al 
-        ls -al m2-repository
+#    - name: checke dependencies
+#      run: |
+#        ls -al
+#        ls -al m2-repository
 
            
            
