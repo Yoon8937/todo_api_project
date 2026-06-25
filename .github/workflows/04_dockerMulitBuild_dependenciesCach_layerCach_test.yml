@@ -51,7 +51,7 @@ jobs:
 
 
     - name: Restore Docker cache mounts
-      uses: reproducible-containers/buildkit-cache-dance@v2
+      uses: reproducible-containers/buildkit-cache-dance@v2.1.2
       with:
         cache-source: m2-repository
         cache-target: /root/.m2/repository
