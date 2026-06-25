@@ -28,14 +28,20 @@ jobs:
       uses: actions/cache@v4
       id: cache
       with:
-        path: /tmp/m2-repository
+        path: m2-build-cache
         key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
         restore-keys: ${{ runner.os }}-m2-
+#        path: /tmp/m2-repository
 
 
 #    - name: check dependencies
 #      run: |
 #        /tmp/m2-repository
+
+    - name: inject go-build-cache into docker
+      uses: reproducible-containers/buildkit-cache-dance@4b2444fec0c0fb9dbf175a96c094720a692ef810 # v2.1.4
+      with:
+        cache-source: m2-build-cache
 
 
 #    - name: Restore Docker cache mounts
@@ -50,13 +56,13 @@ jobs:
 
 
 
-    - name: Restore Docker cache mounts
-      uses: reproducible-containers/buildkit-cache-dance@v3
-      with:
-        builder: ${{ steps.setup-buildx.outputs.name }}
-        cache-dir: /tmp/m2-repository
-        dockerfile: dockerfile
-        skip-extraction: ${{ steps.cache.outputs.cache-hit }}
+#    - name: Restore Docker cache mounts
+#      uses: reproducible-containers/buildkit-cache-dance@v3
+#      with:
+#        builder: ${{ steps.setup-buildx.outputs.name }}
+#        cache-dir: /tmp/m2-repository
+#        dockerfile: dockerfile
+#        skip-extraction: ${{ steps.cache.outputs.cache-hit }}
 
 
 #    - name: Restore Docker cache mounts
