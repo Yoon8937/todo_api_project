@@ -7,6 +7,7 @@ COPY pom.xml .
 RUN --mount=type=cache,target=/root/.m2/repository \
     mvn -B dependency:go-offline
 #RUN mvn -B dependency:go-offline
+Run ls -al /root/.m2/repository
 
 #RUN ls /root/.m2 # No such file or directory
 
