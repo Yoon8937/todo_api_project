@@ -33,9 +33,9 @@ jobs:
         restore-keys: ${{ runner.os }}-m2-
 
 
-    - name: check dependencies
-      run: |
-        /tmp/m2-repository
+#    - name: check dependencies
+#      run: |
+#        /tmp/m2-repository
 
 
 #    - name: Restore Docker cache mounts
