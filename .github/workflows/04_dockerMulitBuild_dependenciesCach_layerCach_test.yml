@@ -70,7 +70,6 @@ jobs:
 
     - name: checke dependencies
       run: |
-#        ls -al m2-repository/root/.m2
         ls -al 
         ls -al m2-repository
 
