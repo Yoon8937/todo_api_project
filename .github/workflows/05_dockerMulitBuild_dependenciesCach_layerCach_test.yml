@@ -51,7 +51,7 @@ jobs:
 
 
 
-   - name: extract m2-build-cache from docker
-     uses: overmindtech/buildkit-cache-dance/extract@main
-     with:
-       cache-source: m2-build-cache
+    - name: extract m2-build-cache from docker
+      uses: overmindtech/buildkit-cache-dance/extract@main
+      with:
+        cache-source: m2-build-cache
