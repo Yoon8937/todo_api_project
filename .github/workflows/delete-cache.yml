@@ -16,7 +16,7 @@ jobs:
         run: |
           gh extension install actions/gh-actions-cache
 
-          REPO=${{ todo_api_project  }} 
+          REPO=${{ github.repository }} 
           BRANCH="main"
 
           echo "Fetching list of cache key"
