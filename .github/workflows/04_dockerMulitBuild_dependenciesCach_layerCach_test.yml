@@ -46,13 +46,14 @@ jobs:
 #        cache-source: m2-build-cache
 
 
-    - name: Restore Docker cache mounts
-      uses: reproducible-containers/buildkit-cache-dance@v3
-      with:
-        cache-map: |
-          {
-            "m2-build-cache" : "/root/.m2"
-          }
+#    - name: Restore Docker cache mounts
+#      uses: reproducible-containers/buildkit-cache-dance@v3
+#      with:
+#        cache-map: |
+#          {
+#            "m2-build-cache" : "/root/.m2"
+#          }
+
 #        builder: ${{ steps.setup-buildxxx.outputs.name }}
 #        skip-extraction: ${{ steps.cache.outputs.cache-hit }}
 
