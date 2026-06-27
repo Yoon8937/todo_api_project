@@ -20,7 +20,9 @@ jobs:
 
 
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
+      uses: docker/setup-buildx-action@v4
+      with:
+        version: latest
       id: setup-buildxxx
 
 
@@ -38,20 +40,20 @@ jobs:
 #      run: |
 #        /tmp/m2-repository
 
-    - name: inject go-build-cache into docker
-      uses: reproducible-containers/buildkit-cache-dance@4b2444fec0c0fb9dbf175a96c094720a692ef810 # v2.1.4
-      with:
-        cache-source: m2-build-cache
-
-
-#    - name: Restore Docker cache mounts
-#      uses: reproducible-containers/buildkit-cache-dance@v3
+#    - name: inject go-build-cache into docker
+#      uses: reproducible-containers/buildkit-cache-dance@4b2444fec0c0fb9dbf175a96c094720a692ef810 # v2.1.4
 #      with:
+#        cache-source: m2-build-cache
+
+
+    - name: Restore Docker cache mounts
+      uses: reproducible-containers/buildkit-cache-dance@v3
+      with:
+        cache-map: |
+          {
+            "m2-build-cache" : "/root/.m2"
+          }
 #        builder: ${{ steps.setup-buildxxx.outputs.name }}
-#        cache-map: |
-#          {
-#            "/tmp/m2-repository" : "/root/.m2/repository"
-#          }
 #        skip-extraction: ${{ steps.cache.outputs.cache-hit }}
 
 
